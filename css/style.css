@@ -9,6 +9,7 @@ html {
 html,
 body {
     height: 100%;
+    /* Tycker ned sidfoten till botten */
 }
 
 html,
@@ -42,20 +43,63 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: grid;
-    grid-template-columns: 140px 1fr;
+    display: inline;
+/*  grid-template-columns: 140px 1fr;
     grid-template-rows: 70px 1fr 50px;
     grid-template-areas:
         "header header"
         "nav nav"
-        "nav footer";
+        "main main"
+        "footer footer"; */
 }
 
-nav {
-    grid-area: nav;
-    background-color: #94a8e9;
-    padding: 10px;
+/* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
+
+
+/* ----- Stil för nav och headern -----*/
+
+header {
+    grid-area: header;
+    background-color: #574fcd;
+    padding: 20px;
 }
+
+header h1 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    padding: 16px 18px;
+    text-decoration: none;
+  }
+  
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #04AA6D;
+  }
+
+  
+
+/* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
+
 
 
 h2 {
@@ -63,11 +107,103 @@ h2 {
     color: #8ae0e0;
 }
 
-
-
 footer {
     background-color: #38b4b4;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+
 }
+
+
+  /* STYLES SPECIFIC TO FOOTER  */
+
+  .footer .col {
+    width: 180px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+/*    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;*/
+    padding: 20px;
+
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+    color: rgba(255,255,255,0.2);
+
+  }
+
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    transition: .2s;
+    
+  }
+
+  /*.social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  } */
+
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+  }
+  
+
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
 
 .questions {
     font-weight: bold;
@@ -86,34 +222,6 @@ div img:hover {
     opacity: 1;
 }
 
-
-#navigation {
-    margin: auto;
-    display: block;
-    width: 70%;
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: block;
-    border: 5px solid rgb(255, 255, 255);
-}
-
-/* ----- Stil för nav och headern -----*/
-
-nav li {
-    display: block;
-    list-style: none;
-    margin-bottom: 2em;
-}
-
-header {
-    grid-area: header;
-    background-color: #574fcd;
-}
-
-header h1 {
-    margin-top: 0;
-}
 
 
 /* ----- Media query 550 -----*/
