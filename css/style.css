@@ -41,7 +41,7 @@ body {
     float: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
-    grid-template-rows: 120px 51px auto <flex>%;
+    grid-template-rows: 120px min-content auto min-content;
     grid-template-areas:
         "header"
         "nav"
@@ -179,6 +179,8 @@ h2 {
 
   
   @media only screen and (max-width: 700px) {
+
+
       .footer .col {
         width: 50%;
       }
@@ -188,10 +190,13 @@ h2 {
       .footer .col ul li {
         font-size: 13px;
       }
+      
   }
   @media only screen and (max-width: 340px) {
     .footer .col {
       width: 100%;
     }
+
+    
   }
 
