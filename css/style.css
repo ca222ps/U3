@@ -41,8 +41,7 @@ body {
     float: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
- /*   grid-template-columns: 
-    grid-template-rows: */
+    grid-template-rows: 120px 51px auto <flex>%;
     grid-template-areas:
         "header"
         "nav"
