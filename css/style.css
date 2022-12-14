@@ -36,18 +36,18 @@ main {
 
 body {
     background-color:rgb(55, 63, 60);
-    max-width: 1080px;
+    max-width: 1280px;
     margin: 0 auto;
     float: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: block;
-    grid-template-columns: 140px 1fr;
-    grid-template-rows: 70px 1fr 50px;
+    display: grid;
+ /*   grid-template-columns: 
+    grid-template-rows: */
     grid-template-areas:
-        "header header"
-        "nav nav"
-        "main main"
-        "footer footer"; 
+        "header"
+        "nav"
+        "main"
+        "footer"; 
 }
 
 /* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
@@ -92,37 +92,34 @@ nav ul {
     background-color: #04AA6D;
   }
 
-  
-
-/* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
-
 
 h2 {
     margin-left: 1em;
     color: #8ae0e0;
 }
 
+
+/* slut main */
+
    footer {
     grid-area: footer;
     background-color: rgb(35, 92, 92);
-
     bottom: 0;
     width: 100%;
     height: auto;
     display: inline-block; 
-
 }
 
-
+/* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
   /* STYLES SPECIFIC TO FOOTER  */
 
   ul {
     list-style-type: none;
-
+    padding: 0;
   }
 
   .footer .col {
-    width: 120px;
+    width: 160px;
     height: auto;
     float: left;
     box-sizing: border-box;
@@ -138,7 +135,7 @@ h2 {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.250em;
-    color: rgba(255,255,255,0.2);
+    color: rgba(114, 96, 81, 0.89);
 
   }
 
@@ -164,7 +161,7 @@ h2 {
   }
   
 
-  @media only screen and (min-width: 1280px) {
+  /*@media only screen and (min-width: 1280px) {
     .contain {
       width: 1200px;
       margin: 0 auto;
@@ -178,19 +175,11 @@ h2 {
     .social h1 {
       margin: 0px;
     }
-  }
-  @media only screen and (max-width: 950px) {
-    .footer .col {
-      width: 33%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
+  } */
+
+
+  
+  @media only screen and (max-width: 700px) {
       .footer .col {
         width: 50%;
       }
