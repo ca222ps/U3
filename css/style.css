@@ -28,6 +28,7 @@ div {
 }
 
 
+
 /* ----- Layout ----- */
 
 main {
@@ -41,7 +42,7 @@ body {
     float: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
-    grid-template-rows: 120px min-content auto min-content;
+    grid-template-rows: 250px min-content auto min-content;
     grid-template-areas:
         "header"
         "nav"
@@ -55,13 +56,22 @@ body {
 /* ----- Stil för nav och headern -----*/
 
 header {
-    grid-area: header;
-    background-color: #574fcd;
-    padding: 20px;
-}
+      grid-area: header;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent), url(../img/skola.jpg);
+      background-size: cover;
+      color: white;
+      padding-top: 1%;
+ }
+
 
 header h1 {
     margin-top: 0;
+    
+}
+
+header h2 {
+  margin-top: 0;
+  
 }
 
 nav ul {
@@ -92,9 +102,10 @@ nav ul {
   }
 
 
-h2 {
+h3 {
     margin-left: 1em;
     color: #8ae0e0;
+    font-size: 24px;
 }
 
 
