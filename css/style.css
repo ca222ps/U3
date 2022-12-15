@@ -56,7 +56,7 @@ h3 {
   font-size: 24px;
 }
 
-main p {
+.bodytext p {
   padding: 0px 30px 0px 30px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
@@ -70,7 +70,6 @@ main p {
     margin-top: 1;
     margin-bottom: 0;
     color: #8ae0e0;
-    font-size: 22px;
 
   }
 
@@ -78,9 +77,11 @@ main p {
   font-size: 14px;
   }
   
-  main p {
-  padding: 16px 10px;
+  .bodytext p {
+  padding: 5px 10px 0px 10px;
   margin-top: 0;
+  font-size: 14px;
+  line-height: 16px;
   }
   }
 
@@ -183,21 +184,23 @@ padding: 16px 10px;
   flex-grow: 1;
 }
 
-h4 {
-  font-size: 22px;
+
+.wrapper h4 {
+  font-size: 20px;
   margin: 0;
-  padding: 10px 30px 0px 30px;
+  padding: 10px 30px 0px 15px;
 }
+
+/* funkar ej? */
+.wrapper p {
+  font-size: 24px;
+}
+
+
 
 @media all and (max-width: 1000px) {
   .wrapper {
-      flex-direction: column;
-      align-items: center;
-  }
-}
 
-@media all and (max-width: 1000px) {
-  .wrapper {
       flex-direction: column;
       align-items: center;
       font-size: 14px;
@@ -230,6 +233,7 @@ h4 {
   }
   .wrapper h4 {
     font-size: 14px;
+    padding: 10px 15px 0px 15px;
   }
 
   .wrapper p {
