@@ -36,19 +36,20 @@ main {
 }
 
 body {
-    background-color:rgb(55, 63, 60);
-    max-width: 1280px;
-    margin: 0 auto;
-    float: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: grid;
-    grid-template-rows: 250px min-content auto min-content;
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer"; 
+  background-color:rgb(55, 63, 60);
+  max-width: 1280px;
+  margin: 0 auto;
+  float: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  grid-template-rows: 250px min-content auto min-content;
+  grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer"; 
 }
+
 
 h3 {
   padding: 0px 20px 0px 30px;
@@ -58,14 +59,17 @@ h3 {
 
 .bodytext p {
   padding: 0px 30px 0px 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 20px;
+  font-size: 16px;
+
 }
 
 img  {
   float: right;    
-   padding: 0px 30px 0px 50px;
+   margin: 0 0 0 15px;
   }
+
 
 @media only screen and (max-width: 650px) {
 
@@ -75,23 +79,40 @@ img  {
     margin-bottom: 0;
     color: #8ae0e0;
   }
-
-  h4 {
-  font-size: 14px;
-  }
   
   .bodytext p {
-  padding: 5px 10px 0px 10px;
+  padding: 5px 20px 0px 20px;
   margin-top: 0;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 15px;
   }
 
   img  {
     float: none;    
-    margin: 10px 15px 0 10px;
+    margin: 10px 20px 0 20px;
 
   }
+}
+
+  @media only screen and (max-width: 500px) {
+
+    h3 {
+      padding: 0px 0px 0px 10px;
+      margin-top: 1;
+      margin-bottom: 0;
+      color: #8ae0e0;
+    }
+    
+    .bodytext p {
+    padding: 5px 15px 0px 15px;
+    margin-top: 0;
+    font-size: 15px;
+    }
+
+    img  {
+      float: none;    
+      margin: 10px 15px 0 15px;
+  
+    }
     }
 
 
@@ -181,6 +202,8 @@ padding: 16px 10px;
   gap: 30px;
   justify-content: space-evenly;
   align-items: stretch;
+  text-align: center;
+
 }
 
 .wrapper div { /* Inre element (boxarna) */
@@ -198,13 +221,14 @@ padding: 16px 10px;
   font-size: 20px;
   margin: 0;
   padding: 10px 30px 0px 15px;
+  
 }
 
-/* funkar ej? */
 .wrapper p {
-  font-size: 24px;
-
-  }
+  font-size: 15px;
+  margin: 0;
+  padding: 10px 15px 10px 15px;
+}
 
 
 @media all and (max-width: 1000px) {
@@ -213,8 +237,7 @@ padding: 16px 10px;
       flex-direction: column;
       align-items: center;
       font-size: 14px;
-      padding: 5px 10px 10px 10px;
-      gap: 20px;
+
   }
   
   .wrapper h4 {
@@ -224,11 +247,11 @@ padding: 16px 10px;
   }
   }
 
-  .wrapper p {
+/*  .wrapper p {
     font-size: 14px;
     margin: 0;
     padding: 10px 15px 10px 15px;
-  }
+  }*/
 
 
 @media all and (max-width: 500px) {
@@ -237,16 +260,16 @@ padding: 16px 10px;
       align-items: center;
       font-size: 12px;
       gap: 10px;
-      padding: 5px 10px 10px 10px;
+      padding: 5px 15px 10px 15px;
       
   }
   .wrapper h4 {
-    font-size: 14px;
+    font-size: 15px;
     padding: 10px 15px 0px 15px;
   }
 
   .wrapper p {
-    font-size: 12px;
+    line-height: 22px;
     margin: 0;
     padding: 10px 15px 10px 15px;
   }
