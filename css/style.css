@@ -50,6 +50,11 @@ body {
         "footer"; 
 }
 
+h4 {
+  font-size: 22px;
+  margin: 0;
+}
+
 /* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
 
 
