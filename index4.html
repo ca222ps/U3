@@ -23,24 +23,79 @@
         </ul>
     </nav>
     <main>
-        <h3>Sida 4</h3>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        <h3>Ansökan om plats på Wennöskaskolan i Moheda</h3>
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        <form id="ansokan">
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            <fieldset class="twoColumns" id="customer">
+              <legend>Information</legend>
+              <label for="name">* Namn på barnet</label>
+                <input type="text">
+                <label for="year">* Årskull</label>
+                  <select>
+                    <option value="red">2002</option>
+                    <option value="green">2003</option>
+                    <option value="blue">2004</option>
+                  </select>
+                  <label for="name">* Barnets personnummer</label>
+                  <input type="date" min="2010-01-01" max="2018-12-31">
+            </fieldset>
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </p>
+            <fieldset id="radios">
+              <legend>Kryssrutor och radioknappar</legend>
 
-                    <p>
-                        Med grid-template-areas kan man specifiera de olika rutnätsområdena i layouten, definiera cellerna i rutnätet, och ge namn till dem. Med grid-template-rows kan man ange analet rader och dess höjd på raderna en rutnätslayout, medan med grid-template-row kan man ange antalet kolmner och dess bredd av en kolumn i en rutnätslayout.
-                    </p>
+              <h5>Har barnet syskon på skolan</h5>
+                <label>
+                    <input type="radio">Ja
+                </label>
+                <label>
+                    <input type="radio">Nej
+                </label>
+                
+                <h5>Önskas hemspråk</h5>
+                <label>
+                    <input type="radio">Ja
+                </label>
+                <label>
+                    <input type="radio">Nej
+                </label>
+            </fieldset>
 
-                    <p>
-                        Media querie är en teknik som används för att skräddarsy formatmallar till olika enheter. Vi kan definiera vissa stilar som endast kommer att tillämpas om definierade villkor är uppfyllda så som vissa enheter. Detta görs så att användaren kan få webbinformationen i sin enhet utan att till exempel behöva zooma för att läsa texten.
-                </p>
+            <fieldset>
+              <legend>Meny</legend>
+              <label>Önskar börja
+                <select>
+                  <option value="red">Förskoleklass</option>
+                  <option value="green">Klass 1</option>
+                  <option value="blue">Klass 2</option>
+                </select>
+              </label>
+            </fieldset>
+
+            <fieldset class="twoColumns">
+              <legend>Attriibuten name och required</legend>
+              En text: <input type="text" name="texten" required>
+            </fieldset>
+
+            <fieldset class="twoColumns" id="parents">
+              <legend>Vårdnadshavare</legend>
+
+              <label for="name">* Vårdnadshavare namn</label>
+              <input type="text"><input type="text">
+              <label for="email">* Vårdnadshavare e-post</label>
+              <input type="email" id="inp3">
+              <label for="name">* Vårdnadshavare telefon</label>              <input type="text" id="inp3">
+              <label for="name">Vi önskar att gå på Wennöskaskolan därför att:</label>
+              <textarea rows="5">En text</textarea>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Knappar</legend>
+              <input type="submit" id="send" value="Skicka">
+            </fieldset>
+
+        </form> 
 
     </main>
 
@@ -93,7 +148,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     </div>
 
   </footer>
-  <!-- END OF FOOTER -->
+
 </body>
 
 </html>

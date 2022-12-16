@@ -409,3 +409,53 @@ color:aquamarine;
     
   }
 
+/* ------ Formulär ------- */
+
+#ansokan {
+  padding: 20px;
+}
+
+#ansokan fieldset {
+margin-bottom: 20px;
+display: grid;
+white-space: nowrap; /*om man ej vill bryta text vid */
+gap: 0.6em;
+}
+
+#ansokan legend {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#customer {
+  grid-template-columns: min-content auto;
+}
+
+#customer input {
+  max-width: 60ch;
+}
+
+
+
+
+#parents input {
+  max-width: 60ch;
+}
+
+#send {
+  display: block;
+  margin-left: auto;
+  font-size: 18px;
+  background-color: #111;
+}
+
+#send:hover {
+  background-color: rgb(10, 61, 44);
+}
+
+@media screen and (max-width: 650px) {
+  #ansokan fieldset {
+    grid-template-columns: auto;
+    gap: 0.2em;
+  }
+}
