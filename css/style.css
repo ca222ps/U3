@@ -431,12 +431,17 @@ gap: 0.6em;
   grid-template-columns: min-content auto;
 }
 
-#customer input {
+#customer input, #textarea {
   max-width: 60ch;
 }
 
+#customer select {
+  max-width: 61ch;
+}
 
-
+#parents {
+  grid-template-columns: 1fr 1fr;
+}
 
 #parents input {
   max-width: 60ch;
