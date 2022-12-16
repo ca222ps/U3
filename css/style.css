@@ -53,9 +53,10 @@ body {
 
 
 h3 {
-  padding: 0px 20px 0px 30px;
   color: #8ae0e0;
   font-size: 24px;
+  padding: 0px 30px 0px 30px;
+
 }
 
 .bodytext p {
@@ -63,19 +64,20 @@ h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 20px;
   font-size: 16px;
-
 }
 
 #hp  {
-  float: right;    
-   margin: 0 30px 0 15px;
+  float: right; 
+  margin-right: 30px;
+  margin-left: 30px;
+   
   }
 
 
 @media only screen and (max-width: 650px) {
 
   h3 {
-    padding: 0px 0px 0px 10px;
+    padding: 5px 20px 0px 20px;
     margin-top: 1;
     margin-bottom: 0;
     color: #8ae0e0;
@@ -196,6 +198,7 @@ padding: 16px 10px;
 /* ----- Kod för flexbox ----- */
 
 .wrapper { /* Omgivande element */
+  margin: 60px 0 0 0;
   padding: 30px;
   display: flex;
   flex-direction: row;
@@ -313,7 +316,7 @@ padding: 16px 10px;
     font-size: 14px;
     font-weight: normal;
     text-transform: uppercase;
-    letter-spacing: 0.250em;
+    letter-spacing: 0.100em;
     color: rgba(114, 96, 81, 0.89);
 
   }
@@ -321,8 +324,9 @@ padding: 16px 10px;
   .footer .col ul li {
     color: #999999;
     font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
     font-weight: bold;
-    padding: 5px;
+    padding: 0px 0px 10px 0px;
     cursor: pointer;
     transition: .2s;
   }
