@@ -436,7 +436,7 @@ background: #06768f;
   grid-template-columns: min-content auto;
 }
 
-#customer input, #parents input, #textarea, #sign input {
+#customer input, #parents input, #textarea, #signname {
   max-width: 60ch;
   height: 20px;
 }
@@ -458,7 +458,15 @@ option:not(:checked) {
   display: block;
   margin-left: auto;
   font-size: 18px;
-  background-color: #111;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  height: 50px;
+  text-decoration: none;
+  margin: 4px 0px;
+  cursor: pointer;
+  max-width: 45.5ch;
+
 }
 
 #send:hover {
