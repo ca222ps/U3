@@ -308,8 +308,8 @@ padding: 16px 10px;
 /*    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;*/
     padding: 25px;
-
   }
+
   .footer .col h1 {
     margin: 0;
     padding: 0;
@@ -331,23 +331,12 @@ padding: 16px 10px;
     transition: .2s;
   }
 
-  .footer .col ul li a:link {
-    color:#04AA6D;
-}
-
-.footer .col ul li a:visited {
-  color: aqua;
-}
 
   .footer .col ul li a:hover {
     color: antiquewhite;
     transition: .1s;
 }
 
-  .footer .col ul li:hover {
-    color: antiquewhite;
-    transition: .1s;
-  }
 
   #logga {
     padding: 0 0px 15px 0;
@@ -421,8 +410,6 @@ color:aquamarine;
 margin-bottom: 20px;
 display: grid;
 white-space: nowrap; /*om man ej vill bryta text vid */
-gap: 0.6em;
-
 }
 
 fieldset {
@@ -433,9 +420,6 @@ background: #06768f;
   font-weight: bold;
 }
 
-#customer {
-  grid-template-columns: min-content auto;
-}
 
 #customer input, #parents input, #textarea, #signname, #customer select, select {
   max-width: 60ch;
@@ -445,8 +429,6 @@ background: #06768f;
   max-height: 300px;
 
 }
-
-
 
 option:not(:checked) {
   background-color: rgb(156, 53, 53);
@@ -485,19 +467,35 @@ option:not(:checked) {
   background-color: rgb(10, 61, 44);
 }
 
-@media screen and (max-width: 650px) {
-  #ansokan fieldset {
-    grid-template-columns: auto;
-    gap: 0.2em;
-  }
+
+/* ------ Kontaktsida ------ */
+
+.container ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+  
 }
 
+.container li {
+  list-style-type: none;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
+}
+
+
+.container li a:hover {
+  color: antiquewhite;
+  transition: .1s;
+}
 
 
 /* ------ Kontaktformulär ------ */
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=text], input[type="email"], input[type="date"], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc;
@@ -509,9 +507,7 @@ input[type=text], select, textarea {
 }
 
 
-/* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
   background-color: #0b2f47;
   padding: 20px;
 }
