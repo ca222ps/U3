@@ -422,6 +422,7 @@ margin-bottom: 20px;
 display: grid;
 white-space: nowrap; /*om man ej vill bryta text vid */
 gap: 0.6em;
+
 }
 
 fieldset {
@@ -436,23 +437,21 @@ background: #06768f;
   grid-template-columns: min-content auto;
 }
 
-#customer input, #parents input, #textarea, #signname {
+#customer input, #parents input, #textarea, #signname, #customer select, select {
   max-width: 60ch;
-  height: 20px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(158, 158, 158);
+  max-height: 300px;
+
 }
 
-select {
-  height: 26px;
-}
+
 
 option:not(:checked) {
   background-color: rgb(156, 53, 53);
 }
 
-
-#customer select {
-  max-width: 61ch;
-}
 
 #send {
   display: block;
@@ -465,11 +464,24 @@ option:not(:checked) {
   text-decoration: none;
   margin: 4px 0px;
   cursor: pointer;
-  max-width: 45.5ch;
-
+  max-width: 45ch;
 }
 
-#send:hover {
+#send1 {
+  display: block;
+  margin-left: auto;
+  font-size: 18px;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  height: 50px;
+  text-decoration: none;
+  margin: 4px 0px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#send:hover, #send1:hover {
   background-color: rgb(10, 61, 44);
 }
 
@@ -478,4 +490,28 @@ option:not(:checked) {
     grid-template-columns: auto;
     gap: 0.2em;
   }
+}
+
+
+
+/* ------ Kontaktformulär ------ */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin: 5px 0px 15px 0px;
+  max-height: 600px;
+  resize: vertical 
+}
+
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #0b2f47;
+  padding: 20px;
 }
