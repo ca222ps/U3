@@ -27,30 +27,38 @@
 
         <form id="ansokan">
 
-            <fieldset class="twoColumns" id="customer">
+            <fieldset class="fields" id="customer">
               <legend>Information</legend>
               <label for="name">* Namn på barnet</label>
-                <input type="text">
+                <input type="text" placeholder="Förnamn och efternamn" required>
                 <label for="year">* Önskar börja</label>
-                <select>
-                  <option value="red">Förskoleklass</option>
-                  <option value="green">Klass 1</option>
-                  <option value="blue">Klass 2</option>
-                </select>
+                  <select required>
+                    <option value="fk">Förskoleklass</option>
+                    <option value="Klass1">Klass 1</option>
+                    <option value="Klass2">Klass 2</option>
+                    <option value="Klass3">Klass 3</option>
+                    <option value="Klass4">Klass 4</option>
+                    <option value="Klass5">Klass 5</option>
+                    <option value="Klass6">Klass 6</option>
+                  </select>
                 <label for="year">* Årskull</label>
-                  <select>
-                    <option value="red">2002</option>
-                    <option value="green">2003</option>
-                    <option value="blue">2004</option>
+                  <select required>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                      <option value="2004">2004</option>
+                      <option value="2005">2005</option>
+                      <option value="2006">2006</option>
+                      <option value="2007">2007</option>
+                      <option value="2008">2008</option>
                   </select>
                   <label for="name">* Barnets personnummer</label>
-                  <input type="date" min="2010-01-01" max="2018-12-31">
+                  <input type="date" min="2010-01-01" max="2018-12-31" required>
             </fieldset>
 
             <fieldset id="radios">
               <legend>Kryssrutor och radioknappar</legend>
 
-              <h5>Har barnet syskon på skolan</h5>
+              <h5>Vi önskar plats på fritids för barnet</h5>
                 <label>
                     <input type="radio" name="radioButton1">Ja
                 </label>
@@ -58,35 +66,39 @@
                     <input type="radio" name="radioButton1">Nej
                 </label>
                 
-                <h5>Önskas hemspråk</h5>
+                <h5>Har barnet syskon på skolan</h5>
                 <label>
                     <input type="radio" name="radioButton2">Ja
                 </label>
                 <label>
                     <input type="radio" name="radioButton2">Nej
                 </label>
+
+                <h5>Önskas hemspråk</h5>
+                <label>
+                    <input type="radio" name="radioButton3">Ja
+                </label>
+                <label>
+                    <input type="radio" name="radioButton3">Nej
+                </label>
             </fieldset>
 
-            <fieldset class="twoColumns">
-              <legend>Attriibuten name och required</legend>
-              En text: <input type="text" name="texten" required>
-            </fieldset>
-
-            <fieldset class="twoColumns" id="parents">
+            <fieldset class="fields" id="parents">
               <legend>Vårdnadshavare</legend>
 
               <label for="name">* Vårdnadshavare namn</label>
-              <input type="text"><input type="text">
+              <input type="text" placeholder="Förnamn och efternamn" required>
               <label for="email">* Vårdnadshavare e-post</label>
-              <input type="email" id="inp3">
-              <label for="name">* Vårdnadshavare telefon</label>              <input type="text" id="inp3">
+              <input type="email" id="inp3" required>
+              <label for="name">* Vårdnadshavare telefon</label>              <input type="text" id="inp3" required>
               <label for="text">Vi önskar att gå på Wennöskaskolan därför att:</label>
-              <textarea id="textarea" rows="5">En text</textarea>
+              <textarea id="textarea" rows="5"></textarea>
 
             </fieldset>
 
-            <fieldset>
-              <legend>Knappar</legend>
+            <fieldset class="fields" id="sign">
+              <legend>Signatur</legend>
+              Underskrift <input type="text" name="texten" placeholder="Vårdnadshavares förnamn och efternamn" required>
               <input type="submit" id="send" value="Skicka">
             </fieldset>
 

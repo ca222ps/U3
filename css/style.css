@@ -411,8 +411,10 @@ color:aquamarine;
 
 /* ------ Formulär ------- */
 
+
+
 #ansokan {
-  padding: 20px;
+  padding: 10px;
 }
 
 #ansokan fieldset {
@@ -422,29 +424,34 @@ white-space: nowrap; /*om man ej vill bryta text vid */
 gap: 0.6em;
 }
 
+fieldset {
+background: #06768f;
+}
+
 #ansokan legend {
   font-weight: bold;
-  font-style: italic;
 }
 
 #customer {
   grid-template-columns: min-content auto;
 }
 
-#customer input, #textarea {
+#customer input, #parents input, #textarea, #sign input {
   max-width: 60ch;
+  height: 20px;
 }
+
+select {
+  height: 26px;
+}
+
+option:not(:checked) {
+  background-color: rgb(156, 53, 53);
+}
+
 
 #customer select {
   max-width: 61ch;
-}
-
-#parents {
-  grid-template-columns: 1fr 1fr;
-}
-
-#parents input {
-  max-width: 60ch;
 }
 
 #send {
