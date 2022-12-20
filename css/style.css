@@ -518,7 +518,9 @@ input[type=text], input[type="email"], input[type="date"], select, textarea {
 .column img {
   max-width: 100%;
   height: auto;
-  padding-bottom: 0px;
+  margin: 0;
+  padding: 0;
+  display: block;
   }
 
 /* Three columns side by side */
@@ -530,17 +532,26 @@ input[type=text], input[type="email"], input[type="date"], select, textarea {
 }
 
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 1000px) {
   .column {
-    width: 100%;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .column {
+    width: 50%;
     display: block;
   }
+
+
 }
 
 /* Some left and right padding inside the container */
 .container {
-  padding: 0px 15px 0px 15px;
-text-align: center;
+  padding: 1px 15px 15px 15px;
+  text-align: center;
 }
 
 /* Clear floats */
@@ -558,27 +569,9 @@ text-align: center;
   font-family: sans-serif;
   color: rgb(255, 255, 255);
   text-decoration-color: red;
-
 }
 
 .contactinfo a[href^="mailto:"]:hover, a[href^="tel:"]:hover  {
 	text-decoration: underline;
 	text-decoration-color: rgb(151, 79, 109);
-}
-
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
 }
