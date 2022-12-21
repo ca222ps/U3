@@ -347,9 +347,12 @@ padding: 16px 10px;
     transition: .2s;
   }
 
+  .footer .col ul li a {
+    color: white;
+}
 
   .footer .col ul li a:hover {
-    color: antiquewhite;
+    color:rgb(235, 190, 225);
     transition: .1s;
 }
 
