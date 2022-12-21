@@ -180,6 +180,11 @@ background-color: #111;
 background-color: #04AA6D;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
+nav .icon {
+  display: none;
+}
+
 
 @media only screen and (max-width: 650px) {
 
@@ -192,6 +197,22 @@ nav li a {
 padding: 16px 10px;
 }
 }
+
+@media screen and (max-width: 450px) {
+  nav {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  
+  nav ul a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 
 
 
@@ -394,8 +415,6 @@ color:aquamarine;
       width: 100%;
       text-align: center;
     }
-
-    
   }
 
 /* ------ Formulär ------- */
@@ -427,7 +446,6 @@ background: #06768f;
   border-radius: 4px;
   border: 1px solid rgb(158, 158, 158);
   max-height: 300px;
-
 }
 
 option:not(:checked) {
@@ -470,23 +488,22 @@ option:not(:checked) {
 
 /* ------ Kontaktsida ------ */
 
-.container ul li {
+.content ul li {
   color: #999999;
   font-size: 14px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
   font-weight: bold;
   padding: 0px 0px 10px 0px;
-  
 }
 
-.container li {
+.content li {
   list-style-type: none;
   padding: 0;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
 }
 
 
-.container li a:hover {
+.content li a:hover {
   color: antiquewhite;
   transition: .1s;
 }
@@ -503,14 +520,25 @@ input[type=text], input[type="email"], input[type="date"], select, textarea {
   box-sizing: border-box; 
   margin: 5px 0px 15px 0px;
   max-height: 600px;
-  resize: vertical 
+  resize: vertical; 
+  
 }
 
 
-.container {
+.content {
   background-color: #0b2f47;
   padding: 20px;
+  
+  
 }
+
+#fullname, #subject, #contactemail, #contacttel {
+  margin-bottom: 20px;
+  display: grid;
+  white-space: nowrap; /*om man ej vill bryta text vid */
+  width: 400px;
+}
+
 
 
 /* ------- Personalsida ------- */
@@ -533,20 +561,6 @@ input[type=text], input[type="email"], input[type="date"], select, textarea {
 
 /* Display the columns below each other instead of side by side on small screens */
 
-@media screen and (max-width: 1000px) {
-  .column {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  .column {
-    width: 50%;
-    display: block;
-  }
-
-
-}
 
 /* Some left and right padding inside the container */
 .container {
@@ -575,3 +589,28 @@ input[type=text], input[type="email"], input[type="date"], select, textarea {
 	text-decoration: underline;
 	text-decoration-color: rgb(151, 79, 109);
 }
+
+@media screen and (max-width: 1000px) {
+  .column {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    min-height: 160px;
+  }
+  }
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  .container {
+    min-height: auto;
+  }
+}
+
+
