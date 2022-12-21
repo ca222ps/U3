@@ -16,147 +16,104 @@
     <nav>
         <ul>
             <li><a href="index.html">Startsida</a></li>
-            <li><a href="index2.html">Om skolan</a></li>
-            <li><a href="index3.html">Skolans personal</a></li>
-            <li><a class="active" href="index4.html">Ansöka</a></li>
-            <li><a href="index5.html">Kontakt</a></li>
+            <li><a href="index2.html">Skolans personal</a></li>
+            <li><a href="index3.html">Ansöka</a></li>
+            <li><a class="active" href="index4.html">Kontakt</a></li>
         </ul>
     </nav>
     <main>
-        <h3>Ansökan om plats på Wennöskaskolan i Moheda</h3>
 
-        <form id="ansokan">
+        <h3>
+            Kontakt
+        </h3>
+        <div class="content">
+  
+          <h4>
+            Besöksadress
+          </h4>
+          <ul>
+            <li>Björnstjärnsgatan 8</li>
+            <li>220 20, Moheda</li>
+          </ul>
 
-            <fieldset class="fields" id="customer">
-              <legend>Information</legend>
-              <label for="name">* Namn på barnet</label>
-                <input type="text" placeholder="Förnamn och efternamn" required>
-                <label for="year">* Önskar börja</label>
-                  <select required>
-                    <option value="fk">Förskoleklass</option>
-                    <option value="Klass1">Klass 1</option>
-                    <option value="Klass2">Klass 2</option>
-                    <option value="Klass3">Klass 3</option>
-                    <option value="Klass4">Klass 4</option>
-                    <option value="Klass5">Klass 5</option>
-                    <option value="Klass6">Klass 6</option>
-                  </select>
-                <label for="year">* Årskull</label>
-                  <select required>
-                      <option value="2002">2002</option>
-                      <option value="2003">2003</option>
-                      <option value="2004">2004</option>
-                      <option value="2005">2005</option>
-                      <option value="2006">2006</option>
-                      <option value="2007">2007</option>
-                      <option value="2008">2008</option>
-                  </select>
-                  <label for="name">* Barnets personnummer</label>
-                  <input type="date" min="2010-01-01" max="2018-12-31" required>
-            </fieldset>
+        <h4>
+          Kontakt
+        </h4>
+        <li><a href="https://www.facebook.com/">035-111111</a></li>
+        <li><a href="https://www.facebook.com/">moheda@wennoska.se</a></li>
 
-            <fieldset id="radios">
-              <legend>Kryssrutor och radioknappar</legend>
+</div>
+        <div>
+            <iframe src=
+"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8691.399351085905!2d14.5732973!3d57.0027561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46572e02938e4659%3A0x801570f261c25ba1!2s342%2060%20Moheda!5e0!3m2!1sen!2sse!4v1671464732335!5m2!1sen!2sse"
+                    width="100%"
+                    height="400"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0">
+            </iframe>
+        </div>
+        </div>
+        <h3>Skriv till oss</h3>
+        <div class="content">
+        
+            <label>* Namn</label>
+            <input type="text" id="fullname" name="fullname" required>
+        
+        
+            <label for="name">* Telefonnummer</label>              
+            <input type="text" id="contacttel" required>
 
-              <h5>Vi önskar plats på fritids för barnet</h5>
-                <label>
-                    <input type="radio" name="radioButton1">Ja
-                </label>
-                <label>
-                    <input type="radio" name="radioButton1">Nej
-                </label>
-                
-                <h5>Har barnet syskon på skolan</h5>
-                <label>
-                    <input type="radio" name="radioButton2">Ja
-                </label>
-                <label>
-                    <input type="radio" name="radioButton2">Nej
-                </label>
+            <label for="name">* E-post</label>              
+            <input type="email" id="contactemail" required>
 
-                <h5>Önskas hemspråk</h5>
-                <label>
-                    <input type="radio" name="radioButton3">Ja
-                </label>
-                <label>
-                    <input type="radio" name="radioButton3">Nej
-                </label>
-            </fieldset>
-
-            <fieldset id="parents">
-              <legend>Vårdnadshavare</legend>
-
-              <label for="name">* Vårdnadshavare namn</label>
-              <input type="text" placeholder="Förnamn och efternamn" required>
-              <label for="email">* Vårdnadshavare e-post</label>
-              <input type="email" id="inp3" required>
-              <label for="name">* Vårdnadshavare telefon</label>              <input type="text" id="inp3" required>
-              <label for="text">Vi önskar att gå på Wennöskaskolan därför att:</label>
-              <textarea id="textarea" style="height:100px" rows="5"></textarea>
-
-            </fieldset>
-
-            <fieldset class="fields">
-              <legend>Signatur</legend>
-              Underskrift <input type="text" name="texten" id="signname" placeholder="Vårdnadshavares förnamn och efternamn" required>
-              
-              <input type="submit" id="send" value="Skicka">
-            </fieldset>
-
-        </form> 
+        
+            <label>* Ämne</label>
+            <textarea id="subject" name="Ämne" placeholder="Skriv ditt meddelande" style="height:200px" required></textarea>
+        
+            <input type="submit" id="send1" value="Skicka">
+        
+          </form>
+        </div>
 
     </main>
 
-<!-- FOOTER START --> 
+<!--- Footer start ---> 
 <footer>
-<div class="footer">
-    <div class="contain">
-    <div class="col">
-      <h1 >Company</h1>
-      <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h1>Products</h1>
-      <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h1>Accounts</h1>
-      <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h1>Resources</h1>
-      <ul>
-        <li>Webmail</li>
-        <li>Redeem code</li>
-        <li>WHOIS lookup</li>
-        <li>Site map</li>
-        <li>Web templates</li>
-        <li>Email templates</li>
-      </ul>
-    </div>
-    </div>
-    </div>
-
-  </footer>
-
-</body>
-
-</html>
+  <div class="footer">
+      <div class="col">
+        <h1>KONTAKT</h1>
+        <ul>
+          <li></li>
+  
+          <li><a href="https://www.facebook.com/">035-111111</a></li>
+          <li><a href="https://www.facebook.com/">moheda@wennoska.se</a></li>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <a href="https://www.facebook.com/" class="fa fa-facebook fa-2x"></a>
+              <a href="https://twitter.com/" class="fa fa-twitter fa-2x"></a>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>ADRESS</h1>
+        <ul>
+          <li>Björnstjärnsgatan 8</li>
+          <li>220 20, Moheda</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Organisationen</h1>
+        <ul>
+          <li>Schoolsoft</li>
+          <li>Jobba hos oss</li>
+          <li>Integritetspolicy</li>
+        </ul>
+      </div>
+      </div>
+  
+    </footer>
+    <!--- Footer end --->
+  </body>
+  
+  </html>

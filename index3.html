@@ -16,156 +16,130 @@
     <nav>
         <ul>
             <li><a href="index.html">Startsida</a></li>
-            <li><a href="index2.html">Om skolan</a></li>
-            <li><a class="active" href="index3.html">Skolans personal</a></li>
-            <li><a href="index4.html">Ansöka</a></li>
-            <li><a href="index5.html">Kontakt</a></li>
+            <li><a href="index2.html">Skolans personal</a></li>
+            <li><a class="active" href="index3.html">Ansöka</a></li>
+            <li><a href="index4.html">Kontakt</a></li>
         </ul>
     </nav>
     <main>
-        <h3>Sida 3</h3>
-        <div class="row">
-          <div class="column">
-              <img src="img/employed1.jpg" alt="employed1">
-              <div class="container">
-                <h2>Joanne Duva</h2>
-                <p class="title">Rektor</p>
-                <div class="contactinfo">
-                <a href="tel:0707-101010">0707-101010</a>
-                <div>
-                <a href="mailto:joanneduva@wennoska.se">joanneduva@wennoska.se</a>    
-              </div>            
-            </div>
-            </div>
-          </div>
-        
-          <div class="column">
-              <img src="img/employed2.jpg" alt="employed2">
-              <div class="container">
-                <h2>Henrietta Skoog</h2>
-                <p class="title">Koordinator</p>
-                <div class="contactinfo">
-                  <a href="tel:0707-202020">0707-202020</a>
-                  <div>
-                  <a href="mailto:henriettaskoog@wennoska.se">henriettaskoog@wennoska.se</a>    
-                </div>            
-              </div>
-              </div>
-          </div>
-        
-          <div class="column">
-              <img src="img/employed3.jpg" alt="employed3">
-              <div class="container">
-                <h2>Johan Petree</h2>
-                <p class="title">Studie och yrkesvägledare</p>
-                <div class="contactinfo">
-                  <a href="tel:0707-303030">0707-303030</a>
-                  <div>
-                  <a href="mailto:johanpetree@wennoska.se">johanpetree@wennoska.se</a>    
-                </div>            
-              </div>
-              </div>
-          </div>
-          </div>
+        <h3>Ansökan om plats på Wennöskaskolan i Moheda</h3>
 
-          <div class="row">
-            <div class="column">
-                <img src="img/employed4.jpg" alt="employed4">
-                <div class="container">
-                  <h2>Nils Borg</h2>
-                  <p class="title">Sjuksköterska</p>
-                  <div class="contactinfo">
-                    <a href="tel:0707-101010">0707-404040</a>
-                    <div>
-                    <a href="mailto:nilsborg@wennoska.se">nilsborg@wennoska.se</a>    
-                </div>
-                </div>
-              </div>
-            </div>
+        <form id="ansokan">
 
-              <div class="column">
-                  <img src="img/employed5.jpg" alt="employed5">
-                  <div class="container">
-                    <h2>Olov Markusson</h2>
-                    <p class="title">Kurator</p>
-                    <div class="contactinfo">
-                      <a href="tel:0707-101010">0707-505050</a>
-                      <div>
-                      <a href="mailto:olovmarkusson@wennoska.se">olovmarkusson@wennoska.se</a>    
-                    </div>            
-                  </div>
-                  </div>
-              </div>
+            <fieldset class="fields" id="customer">
+              <legend>Information</legend>
+              <label for="name">* Namn på barnet</label>
+                <input type="text" placeholder="Förnamn och efternamn" required>
+                <label for="year">* Önskar börja</label>
+                  <select required>
+                    <option value="fk">Förskoleklass</option>
+                    <option value="Klass1">Klass 1</option>
+                    <option value="Klass2">Klass 2</option>
+                    <option value="Klass3">Klass 3</option>
+                    <option value="Klass4">Klass 4</option>
+                    <option value="Klass5">Klass 5</option>
+                    <option value="Klass6">Klass 6</option>
+                  </select>
+                <label for="year">* Årskull</label>
+                  <select required>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                      <option value="2004">2004</option>
+                      <option value="2005">2005</option>
+                      <option value="2006">2006</option>
+                      <option value="2007">2007</option>
+                      <option value="2008">2008</option>
+                  </select>
+                  <label for="name">* Barnets personnummer</label>
+                  <input type="date" min="2010-01-01" max="2018-12-31" required>
+            </fieldset>
 
-              <div class="column">
-                    <img src="img/employed6.jpg" alt="employed6">
-                    <div class="container">
-                      <h2>Kamilla Roos</h2>
-                      <p class="title">Specialpedagog</p>
-                      <div class="contactinfo">
-                        <a href="tel:0707-101010">0707-606060</a>
-                        <div>
-                        <a href="mailto:kamillaroos@wennoska.se">kamillaroos@wennoska.se</a>    
-                      </div>            
-                    </div>
-                    </div>
-                </div>
+            <fieldset id="radios">
+              <legend>Kryssrutor och radioknappar</legend>
 
-        </div>
-        
+              <h5>Vi önskar plats på fritids för barnet</h5>
+                <label>
+                    <input type="radio" name="radioButton1">Ja
+                </label>
+                <label>
+                    <input type="radio" name="radioButton1">Nej
+                </label>
+                
+                <h5>Har barnet syskon på skolan</h5>
+                <label>
+                    <input type="radio" name="radioButton2">Ja
+                </label>
+                <label>
+                    <input type="radio" name="radioButton2">Nej
+                </label>
+
+                <h5>Önskas hemspråk</h5>
+                <label>
+                    <input type="radio" name="radioButton3">Ja
+                </label>
+                <label>
+                    <input type="radio" name="radioButton3">Nej
+                </label>
+            </fieldset>
+
+            <fieldset id="parents">
+              <legend>Vårdnadshavare</legend>
+
+              <label for="name">* Vårdnadshavare namn</label>
+              <input type="text" placeholder="Förnamn och efternamn" required>
+              <label for="email">* Vårdnadshavare e-post</label>
+              <input type="email" id="inp3" required>
+              <label for="name">* Vårdnadshavare telefon</label>              <input type="text" id="inp3" required>
+              <label for="text">Vi önskar att gå på Wennöskaskolan därför att:</label>
+              <textarea id="textarea" style="height:100px" rows="5"></textarea>
+
+            </fieldset>
+
+            <fieldset class="fields">
+              <legend>Signatur</legend>
+              Underskrift <input type="text" name="texten" id="signname" placeholder="Vårdnadshavares förnamn och efternamn" required>
+              
+              <input type="submit" id="send" value="Skicka">
+            </fieldset>
+
+        </form> 
 
     </main>
 
-<!-- FOOTER START --> 
+<!--- Footer start ---> 
 <footer>
-<div class="footer">
-    <div class="contain">
-    <div class="col">
-      <h1 >Company</h1>
-      <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h1>Products</h1>
-      <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h1>Accounts</h1>
-      <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h1>Resources</h1>
-      <ul>
-        <li>Webmail</li>
-        <li>Redeem code</li>
-        <li>WHOIS lookup</li>
-        <li>Site map</li>
-        <li>Web templates</li>
-        <li>Email templates</li>
-      </ul>
-    </div>
-    </div>
-    </div>
-
-  </footer>
-  <!-- END OF FOOTER -->
-</body>
-
-</html>
+  <div class="footer">
+      <div class="col">
+        <h1>KONTAKT</h1>
+        <ul>
+          <li></li>
+  
+          <li><a href="https://www.facebook.com/">035-111111</a></li>
+          <li><a href="https://www.facebook.com/">moheda@wennoska.se</a></li>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <a href="https://www.facebook.com/" class="fa fa-facebook fa-2x"></a>
+              <a href="https://twitter.com/" class="fa fa-twitter fa-2x"></a>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>ADRESS</h1>
+        <ul>
+          <li>Björnstjärnsgatan 8</li>
+          <li>220 20, Moheda</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Organisationen</h1>
+        <ul>
+          <li>Schoolsoft</li>
+          <li>Jobba hos oss</li>
+          <li>Integritetspolicy</li>
+        </ul>
+      </div>
+      </div>
+  
+    </footer>
+    <!--- Footer end --->
+  </body>
+  
+  </html>
