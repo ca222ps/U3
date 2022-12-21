@@ -333,12 +333,11 @@ padding: 16px 10px;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.100em;
-    color: rgba(114, 96, 81, 0.89);
+    color: lightgray;
 
   }
 
   .footer .col ul li {
-    color: #999999;
     font-size: 14px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
     font-weight: bold;
