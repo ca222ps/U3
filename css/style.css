@@ -485,62 +485,6 @@ option:not(:checked) {
   background-color: rgb(10, 61, 44);
 }
 
-
-/* ------ Kontaktsida ------ */
-
-.content ul li {
-  color: #999999;
-  font-size: 14px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
-  font-weight: bold;
-  padding: 0px 0px 10px 0px;
-}
-
-.content li {
-  list-style-type: none;
-  padding: 0;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
-}
-
-
-.content li a:hover {
-  color: antiquewhite;
-  transition: .1s;
-}
-
-
-/* ------ Kontaktformulär ------ */
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], input[type="email"], input[type="date"], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; 
-  margin: 5px 0px 15px 0px;
-  max-height: 600px;
-  resize: vertical; 
-  
-}
-
-
-.content {
-  background-color: #0b2f47;
-  padding: 20px;
-  
-  
-}
-
-#fullname, #subject, #contactemail, #contacttel {
-  margin-bottom: 20px;
-  display: grid;
-  white-space: nowrap; /*om man ej vill bryta text vid */
-  width: 400px;
-}
-
-
-
 /* ------- Personalsida ------- */
 
 .column img {
@@ -614,3 +558,63 @@ input[type=text], input[type="email"], input[type="date"], select, textarea {
 }
 
 
+
+/* ------ Kontaktsida ------ */
+
+.content ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+}
+
+.content li {
+  list-style-type: none;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
+}
+
+
+.content li a:hover {
+  color: antiquewhite;
+  transition: .1s;
+}
+
+
+/* ------ Kontaktformulär ------ */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type="email"], input[type="date"], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin: 5px 0px 15px 0px;
+  max-height: 600px;
+  resize: vertical; 
+  
+}
+
+
+
+
+div.content
+{
+    display: block;
+    text-align: center;
+    background-color: #0b2f47;
+    padding: 20px;
+}
+
+
+#fullname, #subject, #contactemail, #contacttel {
+    margin-bottom: 20px;
+    display: grid;
+    white-space: nowrap; /*om man ej vill bryta text vid */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
