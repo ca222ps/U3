@@ -37,7 +37,6 @@ main {
 }
 
 body {
-  background-color:rgb(55, 63, 60);
   max-width: 1280px;
   margin: 0 auto;
   float: none;
@@ -155,12 +154,14 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 nav ul {
 grid-area: nav;
 list-style-type: none;
+display: row;
 margin: 0;
 padding: 0;
 overflow: hidden;
+display: flex;
 font-size: 15px;
+background-color:rgb(55, 63, 60);
 }
-
 
 nav li a {
 display: block;
@@ -169,6 +170,21 @@ padding: 16px 18px;
 text-decoration: none;
 float: left;
 }
+
+nav ul ul { /* Lokal nav */
+  background-color: pink;
+  flex-direction: column;
+  position: absolute;
+  visibility: hidden;
+}
+
+nav ul li:hover ul { /* För dropdown */
+  visibility: visible;
+}
+
+nav ul li ul li a {
+  width: 100%;
+  }
 
 
 /* Change the link color to #111 (black) on hover */
@@ -185,6 +201,9 @@ nav .icon {
   display: none;
 }
 
+#menuicon, #menucheckbox {
+  display: none;
+}
 
 @media only screen and (max-width: 650px) {
 
@@ -205,15 +224,82 @@ padding: 16px 10px;
     top: 0;
   }
 
+  nav ul {
+    flex-direction: column;
+    z-index: 100;
+    right: 0;
+  }
+
+  nav ul li {
+    position: relative;
+    
+  }
+
+  nav ul ul {
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+  }
+
+  nav ul li:hover ul {
+    visibility: visible;
+  }
   
   nav ul a {
     float: none;
     display: block;
     text-align: left;
   }
+
+  #menuicon {
+    background-image: url(../img/menuicon.png);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 5px 5px 3px 5px;
+  }
+
+  #menucheckbox ~ ul {
+      display: none;
+  }
+
+  #menucheckbox:checked ~ ul {
+    display: flex;
+  }
+
 }
 
 
+
+/* ----- Nav lokal ----- 
+
+.locnav nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2em;
+}
+
+.locnav nav ul {
+  color: #8ae0e0;
+  padding: 0.4em;
+  text-decoration: none;
+  display: block;
+}
+
+.locnav a:hover {
+  background-color: #ccc;
+  color: antiquewhite;
+}
+
+.locnav a.thisPage {
+  background-color: #2c6b8d;
+  color: #000;
+}
+*/
 
 
 /* ----- Kod för flexbox ----- */
