@@ -33,7 +33,7 @@ div {
 
 
 main {
-  background-color: #2c6b8d;
+  background-color: #ffffff;
 }
 
 body {
@@ -53,59 +53,60 @@ body {
 
 h3 {
   color: #8ae0e0;
-  font-size: 24px;
+  font-size: 26px;
   padding: 0px 30px 0px 30px;
+  text-align: center;
 }
 
 h4 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   padding: 0px 30px 0px 30px;
 }
 
+
 .bodytext p {
-  padding: 0px 30px 0px 30px;
+  padding: 0px 100px 0px 100px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 20px;
-  font-size: 16px;
+  line-height: 28px;
+  font-size: 18px;
 }
 
 #hp  {
   float: right; 
-  margin-right: 30px;
+  margin-right: 100px;
   margin-left: 30px;
    
   }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 900px) {
 
   h3 {
-    padding: 5px 20px 0px 20px;
     margin-top: 1;
-    margin-bottom: 0;
+    margin-bottom: 2;
     color: #8ae0e0;
   }
   
   .bodytext p {
-  padding: 5px 20px 0px 20px;
+  padding: 5px 40px 0px 40px;
   margin-top: 0;
-  font-size: 15px;
+  font-size: 16px;
   }
 
   #hp  {
     float: none;    
-    margin: 10px 20px 0 20px;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
   @media only screen and (max-width: 500px) {
 
     h3 {
-      padding: 0px 0px 0px 10px;
       margin-top: 1;
-      margin-bottom: 0;
+      margin-bottom: 1;
       color: #8ae0e0;
     }
     
@@ -176,7 +177,7 @@ text-decoration: none;
 }
 
 nav ul ul { /* Lokal nav */
-  background-color: pink;
+  background-color: #296987;
   flex-direction: column;
   position: absolute;
   visibility: hidden;
@@ -184,21 +185,20 @@ nav ul ul { /* Lokal nav */
 
 nav ul li:hover ul { /* För dropdown */
   visibility: visible;
-  background-color: aqua;
 }
 
 nav ul li ul li a {
   width: 100%;
-  padding: 16px 11px;
+  padding: 16px 19px;
   }
 
 
 nav li a:hover { /* Ändra länkfärg vid hover */
-background-color: #111;
+background-color: rgb(0, 0, 0);
 }
 
 .active {
-background-color: #04AA6D;
+background-color: #01CB8E;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -285,7 +285,6 @@ nav ul li ul li a {
 /* ----- Kod för flexbox ----- */
 
 .wrapper { /* Omgivande element */
-  margin: 60px 0 0 0;
   padding: 30px;
   display: flex;
   flex-direction: row;
@@ -297,7 +296,7 @@ nav ul li ul li a {
 }
 
 .wrapper div { /* Inre element (boxarna) */
-  background-color: #04AA6D;
+  background-color: #01CB8E;
   padding: 4px;
   flex-basis: 120px;
   min-width: 280px;
@@ -314,12 +313,6 @@ nav ul li ul li a {
   
 }
 
-.bodytext p {
-  line-height: 22px;
-  font-size: 15px;
-  margin: 0;
-
-}
 
 .wrapper p {
   line-height: 22px;
@@ -348,6 +341,11 @@ nav ul li ul li a {
 
 @media all and (max-width: 500px) {
 
+  .wrapper {
+    padding: 15px;
+    gap: 15px;
+  }
+  
   .wrapper h4 {
     font-size: 15px;
     padding: 10px 15px 0px 15px;
@@ -361,127 +359,9 @@ nav ul li ul li a {
   }
   }
 
-/* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
 
 
-
-   footer {
-    grid-area: footer;
-    background-color: rgb(35, 92, 92);
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    display: inline-block; 
-}
-
-/* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
-  /* STYLES SPECIFIC TO FOOTER  */
-
-  .colbul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .footer .col {
-    width: 260px; /*anpassa meny & media*/
-    height: auto;
-    float: left;
-    box-sizing: border-box;
-/*    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;*/
-    padding: 25px;
-  }
-
-  .footer .col h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.100em;
-    color: lightgray;
-
-  }
-
-  .footer .col ul li {
-    font-size: 14px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
-    font-weight: bold;
-    padding: 0px 0px 10px 0px;
-    cursor: pointer;
-    transition: .2s;
-  }
-
-  .footer .col ul li a {
-    color: white;
-}
-
-  .footer .col ul li a:hover {
-    color:rgb(235, 190, 225);
-    transition: .1s;
-}
-
-
-  #logga {
-    padding: 0 0px 15px 0;
-      align-items: center;
-
-  }
-
-  .fa {
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-  .fa:hover {
-color:aquamarine;
-  }
-  
-
-  /*@media only screen and (min-width: 1280px) {
-    .contain {
-      width: 1200px;
-      margin: 0 auto;
-    }
-  }
-  @media only screen and (max-width: 1139px) {
-    .contain .social {
-      width: 1000px;
-      display: block;
-    }
-    .social h1 {
-      margin: 0px;
-    }
-  } */
-
-
-  
-  @media only screen and (max-width: 650px) {
-
-
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col ul li {
-        font-size: 12px;
-      }
-
-      .footer .col h1  {
-      font-size: 14px;
-  }
-}
-
-
-  @media only screen and (max-width: 350px) {
-    .footer .col {
-      width: 100%;
-      text-align: center;
-    }
-  }
-
-
-/* ------ Formulär ------- */
+/* ------ Ansökningsformulär ------- */
 
 
 
@@ -496,7 +376,7 @@ white-space: nowrap; /*om man ej vill bryta text vid */
 }
 
 fieldset {
-background: #06768f;
+background: #296987;
 }
 
 #ansokan legend {
@@ -510,10 +390,6 @@ background: #06768f;
   border-radius: 4px;
   border: 1px solid rgb(158, 158, 158);
   max-height: 300px;
-}
-
-option:not(:checked) {
-  background-color: rgb(156, 53, 53);
 }
 
 
@@ -531,19 +407,6 @@ option:not(:checked) {
   max-width: 45ch;
 }
 
-#send1 {
-  display: block;
-  margin-left: auto;
-  font-size: 18px;
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  height: 50px;
-  text-decoration: none;
-  margin: 4px 0px;
-  cursor: pointer;
-  width: 100%;
-}
 
 #send:hover, #send1:hover {
   background-color: rgb(10, 61, 44);
@@ -589,7 +452,7 @@ option:not(:checked) {
 
 .contactinfo a[href^="mailto:"], a[href^="tel:"]  { 
   font-family: sans-serif;
-  color: rgb(255, 255, 255);
+  color: antiquewhite;
   text-decoration-color: red;
 }
 
@@ -681,5 +544,173 @@ div.content
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+}
+
+#send1 {
+  display: block;
+  margin-left: auto;
+  font-size: 18px;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  height: 50px;
+  text-decoration: none;
+  margin: 4px 0px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 600px;
+  margin: auto
+}
+
+
+/* Footer /*
+/* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
+
+
+
+footer {
+  grid-area: footer;
+  background-color: #30246B;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: inline-block; 
+}
+
+/* From https://www.w3schools.com/css/css_navbar_horizontal.asp to change */
+/* STYLES SPECIFIC TO FOOTER  */
+
+.colbul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .col {
+  width: 260px; /*anpassa meny & media*/
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+/*    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;*/
+  padding: 25px;
+}
+
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.100em;
+  color: lightgray;
+
+}
+
+.footer .colbul li {
+  color: antiquewhite;
+}
+
+.footer .col ul li {
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+  transition: .2s;
+}
+
+.footer .col ul li a {
+  color: antiquewhite;
+}
+
+.footer .col ul li a:hover {
+  color: #EBBEE0;
+  transition: .1s;
+}
+
+
+#logga {
+  padding: 0 0px 15px 0;
+    align-items: center;
+
+}
+
+.fa {
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.face {
+  float: left;
+  position:static;
+}
+
+.twitt {
+  float: left;
+  position:static;
+
+}
+
+
+/*@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+} */
+
+
+
+@media only screen and (max-width: 780px) {
+
+
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+
+    .footer .col h1  {
+    font-size: 14px;
+}
+
+.face {
+  float: left;
+  position:static;
+  margin-top: 50px;
+}
+
+.twitt {
+  float: left;
+  position:static;
+  margin-top: 50px;
+}
+}
+
+
+@media only screen and (max-width: 350px) {
+  .footer .col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .face {
+margin-left: 35%;
+  }
+  
+  .twitt {
+    position:static;
+    margin-top: 50px;
+  }
 }
