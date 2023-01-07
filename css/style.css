@@ -59,7 +59,7 @@ h3 {
 }
 
 h4 {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: 20px;
   padding: 0px 30px 0px 30px;
 }
@@ -67,7 +67,7 @@ h4 {
 
 .bodytext p {
   padding: 0px 100px 0px 100px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 28px;
   font-size: 18px;
 }
@@ -90,7 +90,8 @@ h4 {
   .bodytext p {
   padding: 5px 40px 0px 40px;
   margin-top: 0;
-  font-size: 16px;
+  line-height: 24px;
+  font-size: 17px;
   }
 
   #hp  {
@@ -111,7 +112,7 @@ h4 {
     .bodytext p {
     padding: 5px 15px 0px 15px;
     margin-top: 0;
-    font-size: 15px;
+    font-size: 16px;
     }
 
     #hp  {
@@ -139,8 +140,6 @@ width: 100%;
 text-align: center;
 font-size: 20px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-
 }
 
 header h2 {
@@ -308,15 +307,18 @@ nav ul li ul li a {
   font-size: 20px;
   margin: 0;
   padding: 10px 30px 0px 15px;
-  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 
 .wrapper p {
   line-height: 22px;
-  font-size: 15px;
+  font-size: 17px;
   margin: 0;
   padding: 10px 15px 10px 15px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 24px;
 }
 
 
@@ -345,13 +347,11 @@ nav ul li ul li a {
   }
   
   .wrapper h4 {
-    font-size: 15px;
     padding: 10px 15px 0px 15px;
   }
 
   .wrapper p {
-    line-height: 20px;
-    font-size: 14px;
+    line-height: 22px;
     margin: 0;
     padding: 10px 15px 10px 15px;
   }
@@ -365,7 +365,6 @@ nav ul li ul li a {
 
 #ansokan {
   padding: 10px;
-
 }
 
 
@@ -456,13 +455,17 @@ display: grid;
   color: #313333;
 }
 
-.colbul a[href^="mailto:"], a[href^="tel:"], .column a[href^="mailto:"], a[href^="tel:"]  { 
-  font-family: sans-serif;
+.column a[href^="mailto:"], a[href^="tel:"]  { 
   color: #0767B0;
   text-decoration-color: #52beac;
 }
 
-.colbul a[href^="mailto:"]:hover, a[href^="tel:"]:hover, .column a[href^="mailto:"]:hover, a[href^="tel:"]:hover  {
+.content li a, .colbul a[href^="mailto:"], a[href^="tel:"] {
+  color: #0767B0;
+  text-decoration-color: #52beac;
+}
+
+.content li a:hover, .colbul a[href^="mailto:"]:hover, a[href^="tel:"]:hover, .column a[href^="mailto:"]:hover, a[href^="tel:"]:hover  {
 	text-decoration: underline;
 	text-decoration-color: #8f43d6;
 }
@@ -497,7 +500,7 @@ display: grid;
 /* ------ Kontaktsida ------ */
 
 .content ul li {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: 14px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
   font-weight: bold;
@@ -525,7 +528,7 @@ div.content
 {
     display: block;
     text-align: center;
-    background-color: rgb(165, 196, 223);
+    background-color: #a5c4df;
     padding: 20px;
 }
 
