@@ -52,7 +52,7 @@ body {
 
 
 h3 {
-  color: #8ae0e0;
+  color: #000000;
   font-size: 26px;
   padding: 0px 30px 0px 30px;
   text-align: center;
@@ -85,7 +85,6 @@ h4 {
   h3 {
     margin-top: 1;
     margin-bottom: 2;
-    color: #8ae0e0;
   }
   
   .bodytext p {
@@ -107,7 +106,6 @@ h4 {
     h3 {
       margin-top: 1;
       margin-bottom: 1;
-      color: #8ae0e0;
     }
     
     .bodytext p {
@@ -166,7 +164,7 @@ padding: 0;
 overflow: hidden;
 display: flex;
 font-size: 15px;
-background-color:rgb(55, 63, 60);
+background-color: #313333;
 }
 
 nav li a {
@@ -177,7 +175,7 @@ text-decoration: none;
 }
 
 nav ul ul { /* Lokal nav */
-  background-color: #296987;
+  background-color: #313333;
   flex-direction: column;
   position: absolute;
   visibility: hidden;
@@ -223,11 +221,11 @@ padding: 16px 10px;
 
 nav ul li ul li a {
   width: 100%;
-  padding: 16px 5px;
+  padding: 16px 11px;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
   nav {
     position: relative;
     right: 0;
@@ -367,21 +365,25 @@ nav ul li ul li a {
 
 #ansokan {
   padding: 10px;
+
 }
 
-#ansokan fieldset {
-margin-bottom: 20px;
-display: grid;
-white-space: nowrap; /*om man ej vill bryta text vid */
+
+legend {
+  display: contents;
+  font-weight: bold;
 }
 
 fieldset {
-background: #296987;
+  background: #7dc9b2;
+  display: inline-flex;
+  gap: 4px;
+  border: none;
+  margin-bottom: 20px;
+display: grid;
+
 }
 
-#ansokan legend {
-  font-weight: bold;
-}
 
 
 #customer input, #parents input, #textarea, #signname, #customer select, select {
@@ -390,6 +392,7 @@ background: #296987;
   border-radius: 4px;
   border: 1px solid rgb(158, 158, 158);
   max-height: 300px;
+  
 }
 
 
@@ -399,18 +402,20 @@ background: #296987;
   font-size: 18px;
   background-color: #04AA6D;
   border: none;
+  border-radius: 4px;
   color: white;
   height: 50px;
   text-decoration: none;
   margin: 4px 0px;
   cursor: pointer;
-  max-width: 45ch;
+  max-width: 43ch;
 }
 
 
 #send:hover, #send1:hover {
   background-color: rgb(10, 61, 44);
 }
+
 
 /* ------- Personalsida ------- */
 
@@ -421,6 +426,7 @@ background: #296987;
   padding: 0;
   display: block;
   }
+
 
 /* Three columns side by side */
 .column {
@@ -447,24 +453,26 @@ background: #296987;
 }
 
 .title {
-  color: grey;
+  color: #313333;
 }
 
-.contactinfo a[href^="mailto:"], a[href^="tel:"]  { 
+.colbul a[href^="mailto:"], a[href^="tel:"], .column a[href^="mailto:"], a[href^="tel:"]  { 
   font-family: sans-serif;
-  color: antiquewhite;
-  text-decoration-color: red;
+  color: #0767B0;
+  text-decoration-color: #52beac;
 }
 
-.contactinfo a[href^="mailto:"]:hover, a[href^="tel:"]:hover  {
+.colbul a[href^="mailto:"]:hover, a[href^="tel:"]:hover, .column a[href^="mailto:"]:hover, a[href^="tel:"]:hover  {
 	text-decoration: underline;
-	text-decoration-color: rgb(151, 79, 109);
+	text-decoration-color: #8f43d6;
 }
 
 @media screen and (max-width: 1000px) {
   .column {
     font-size: 13px;
   }
+
+  
 }
 
 @media screen and (max-width: 680px) {
@@ -489,7 +497,7 @@ background: #296987;
 /* ------ Kontaktsida ------ */
 
 .content ul li {
-  color: #999999;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifz;
   font-weight: bold;
@@ -513,6 +521,14 @@ iframe {
   border: 0;
 }
 
+div.content
+{
+    display: block;
+    text-align: center;
+    background-color: rgb(165, 196, 223);
+    padding: 20px;
+}
+
 
 /* ------ Kontaktformulär ------ */
 
@@ -520,7 +536,7 @@ iframe {
 input[type=text], input[type="email"], input[type="date"], select, textarea {
   width: 100%;
   padding: 12px; 
-  border: 1px solid #ccc;
+  border: 1px solid antiquewhite;
   border-radius: 4px;
   box-sizing: border-box; 
   margin: 5px 0px 15px 0px;
@@ -528,13 +544,6 @@ input[type=text], input[type="email"], input[type="date"], select, textarea {
   resize: vertical;  
 }
 
-div.content
-{
-    display: block;
-    text-align: center;
-    background-color: #0b2f47;
-    padding: 20px;
-}
 
 
 #fullname, #subject, #contactemail, #contacttel {
