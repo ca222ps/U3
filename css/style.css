@@ -79,6 +79,12 @@ h4 {
    
   }
 
+  .media {
+    font-size: 20px;
+    padding: 0px 100px 0px 100px;
+    text-align: center;
+  }
+
 
 @media only screen and (max-width: 900px) {
 
@@ -460,12 +466,12 @@ display: grid;
   text-decoration-color: #52beac;
 }
 
-.content li a, .colbul a[href^="mailto:"], a[href^="tel:"] {
+.media, .content li a, .colbul a[href^="mailto:"], a[href^="tel:"] {
   color: #0767B0;
   text-decoration-color: #52beac;
 }
 
-.content li a:hover, .colbul a[href^="mailto:"]:hover, a[href^="tel:"]:hover, .column a[href^="mailto:"]:hover, a[href^="tel:"]:hover  {
+.media:hover, .content li a:hover, .colbul a[href^="mailto:"]:hover, a[href^="tel:"]:hover, .column a[href^="mailto:"]:hover, a[href^="tel:"]:hover  {
 	text-decoration: underline;
 	text-decoration-color: #8f43d6;
 }
